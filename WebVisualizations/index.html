@@ -21,9 +21,9 @@
 <body>
 
 <div class="container">
-    <div class="row">
+    <div class="row div-row">
         <div class="col-md-1">
-            <nav class="navbar navbar-default "></nav>
+            <nav class="navbar navbar-default"></nav>
             <ul class="nav nav-pills">
               <li class="nav-item">
                 <a class="nav-link active" href="index.html">Latitude</a>
@@ -32,7 +32,7 @@
           </nav>
         </div>
         <div class="col-md-7"></div>
-        <div class="col-md-4">
+        <div class="col-md-4 center">
             <nav class="navbar navbar-expand-lg"></nav>
                 <ul class="nav nav-pills">
                     <li class="nav-item dropdown">
@@ -61,26 +61,26 @@
     <br>
 
     <div class="row">
-        <div class="col-md-7">
+        <div class="col-md-8 col-lg-8 col-sm-8 col-xs-8">
             <main>
                 <header>
                     <h1>Summary: Latitude vs. X</h1>
                     <hr>
                 </header>
-                <img  id="main_fig" src="./assets/latitude_Max-Temperature.png" alt="latitude_Max-Temperature" style="width:300px;height:300px;float:left">
+                <img  id="main_fig" src="./assets/latitude_Max-Temperature.png" alt="latitude_Max-Temperature">
                     <p> This homework project is intended to use the Web tools we learned to create a dashboard displaying our weather analysis results.
                         We analyzed the weather information for 500 cities, using their latitude and longitude coordinates to query the
                         weather information from OpenWeatherMap API. Then we built a series of scatter plots to show the following relationships:
                         <ul>
-                            <li>Temperature (F) vs. Latitude</li>
-                            <li>Humidity (%) vs. Latitude</li>
-                            <li>Cloudiness (%) vs. Latitude</li>
-                            <li>Wind Speed (mph) vs. Latitude</li>
+                            <ul>Temperature (F) vs. Latitude</ul>
+                            <ul>Humidity (%) vs. Latitude</ul>
+                            <ul>Cloudiness (%) vs. Latitude</ul>
+                            <ul>Wind Speed (mph) vs. Latitude</ul>
                         </ul>
                     </p>
             </main>
         </div>
-        <div class="col-md-5">
+        <div class="col-md-4 col-sm-4 col-lg-4 col-xs-4">
 
             <main>
                 <header>
@@ -88,12 +88,12 @@
                     <br>
                 </header>
                     <div class="row" >
-                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6"><a href="temperature.html"><img class = "img img-responsive" src="./assets/latitude_Max-Temperature.png" style="width:100%" alt="latitude_Max-Temperature"></a></div>
-                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6"><a href="humidity.html"><img class = "img img-responsive" src="./assets/Latitude_vs_Humidity.png" style="width:100%" alt="Latitude_vs_Humidity"></a></div>
+                        <div id="small-img" class="col-lg-6 col-md-6 col-sm-6 col-xs-6"><a href="temperature.html"><img class = "img img-responsive" src="./assets/latitude_Max-Temperature.png" style="width:100%" alt="latitude_Max-Temperature"></a></div>
+                        <div id="small-img" class="col-lg-6 col-md-6 col-sm-6 col-xs-6 small-img"><a href="humidity.html"><img class = "img img-responsive" src="./assets/Latitude_vs_Humidity.png" style="width:100%" alt="Latitude_vs_Humidity"></a></div>
                     </div>
                     <div class="row">
-                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6"><a href="cloudiness.html"><img class = "img img-responsive" src="./assets/Latitude_vs_Cloudiness.png" style="width:100%" alt="Latitude_vs_Cloudiness"></a></div>
-                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6"><a href="windspeed.html"><img class = "img img-responsive" src="./assets/Latitude_vs_WindSpeed.png" style="width:100%" alt="Latitude_vs_WindSpeed"></a></div>
+                        <div id="small-img" class="col-lg-6 col-md-6 col-sm-6 col-xs-6 small-img"><a href="cloudiness.html"><img class = "img img-responsive" src="./assets/Latitude_vs_Cloudiness.png" style="width:100%" alt="Latitude_vs_Cloudiness"></a></div>
+                        <div id="small-img" class="col-lg-6 col-md-6 col-sm-6 col-xs-6 small-img"><a href="windspeed.html"><img class = "img img-responsive" src="./assets/Latitude_vs_WindSpeed.png" style="width:100%" alt="Latitude_vs_WindSpeed"></a></div>
                     </div>
               </main> 
 
