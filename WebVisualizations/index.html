@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="UTF-8">
+  <title>Weather Analysis Visualization Dashboard</title>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+  <!-- Bring in our bootstrap stylesheet -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="./resources/bootstrap.min.css"> 
+  <link rel="stylesheet" href="./resources/style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-1">
+            <nav class="navbar navbar-default"></nav>
+            <ul class="nav nav-pills">
+              <li class="nav-item">
+                <a class="nav-link active" href="index.html">Latitude</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="col-md-7"></div>
+        <div class="col-md-4">
+            <nav class="navbar navbar-expand-lg"></nav>
+                <ul class="nav nav-pills">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-dark" id ="navbarDropdownMenuLink" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" 
+                            aria-expanded="false">Plots
+                        </a>
+                        <div class="dropdown-menu dropdown-default" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item text-dark" href="#">Max Temperature</a>
+                            <a class="dropdown-item text-dark" href="#">Humidity</a>
+                            <a class="dropdown-item text-dark" href="#">Cloudiness</a>
+                            <a class="dropdown-item text-dark" href="#">Wind Speed</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="comparison.html">Comparison</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="data.html">Data</a>
+                    </li>
+                </ul>
+            </nav>
+
+        </div>
+    </div>
+    <br>
+    <br>
+
+    <div class="row">
+        <div class="col-md-7">
+            <main>
+                <header>
+                    <h1>Summary: Latitude vs. X</h1>
+                    <hr>
+                </header>
+                <img  id="main_fig" src="./assets/latitude_Max-Temperature.png" alt="latitude_Max-Temperature" style="width:300px;height:300px;float:left">
+                    <p> This homework project is intended to use the Web tools we learned to create a dashboard displaying our weather analysis results.
+                        We analyzed the weather information for 500 cities, using their latitude and longitude coordinates to query the
+                        weather information from OpenWeatherMap API. Then we built a series of scatter plots to show the following relationships:
+                        <ul>
+                            <li>Temperature (F) vs. Latitude</li>
+                            <li>Humidity (%) vs. Latitude</li>
+                            <li>Cloudiness (%) vs. Latitude</li>
+                            <li>Wind Speed (mph) vs. Latitude</li>
+                        </ul>
+                    </p>
+            </main>
+        </div>
+        <div class="col-md-5">
+
+            <main>
+                <header>
+                    <h2>Visualizations</h2>
+                    <br>
+                </header>
+                    <div class="row" >
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6"><a href="temperature.html"><img class = "img img-responsive" src="./assets/latitude_Max-Temperature.png" style="width:100%" alt="latitude_Max-Temperature"></a></div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6"><a href="humidity.html"><img class = "img img-responsive" src="./assets/Latitude_vs_Humidity.png" style="width:100%" alt="Latitude_vs_Humidity"></a></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6"><a href="cloudiness.html"><img class = "img img-responsive" src="./assets/Latitude_vs_Cloudiness.png" style="width:100%" alt="Latitude_vs_Cloudiness"></a></div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6"><a href="windspeed.html"><img class = "img img-responsive" src="./assets/Latitude_vs_WindSpeed.png" style="width:100%" alt="Latitude_vs_WindSpeed"></a></div>
+                    </div>
+              </main> 
+
+        </div>
+    </div>
+</div>
+
+</body>
+
+</html>
