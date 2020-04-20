@@ -14,11 +14,23 @@
   background-color: lightgrey;
   }
 
-  #small-img:hover{
-    border: 3px solid rgb(20, 180, 164);
+.active{
+  border-color:#0BADA6;
+  border-style: solid;     
+}
+
+.title{
+    color: #0BADA6;  
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bolder; 
+    padding-top: 25px; 
+}
+
+#small-img:hover{
+  border: 1px solid rgb(20, 180, 164);
   }
 
-@media (max-width: 760px) {
+@media (max-width: 480px) {
 
 #small-img{
     float: left;
