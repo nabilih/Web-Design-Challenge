@@ -1,7 +1,7 @@
 #main_fig {
   width:300px;
   height:300px;
-  float:left
+  float:left;
 }
 
 .center {
@@ -10,13 +10,13 @@
   align-items: center;
 }
 
-.div-row{
+.div-row {
   background-color: lightgrey;
   }
 
 .active{
   border-color:#0BADA6;
-  border-style: solid;     
+  border-style: solid;      
 }
 
 .title{
@@ -30,15 +30,33 @@
   border: 1px solid rgb(20, 180, 164);
   }
 
-@media (max-width: 480px) {
+#main_image {
+  width:100%;
+  height:100%;
+}
 
-#small-img{
+ @media (max-width: 600px) {
+
+#small-img {
     float: left;
     position: relative;
  }
 
-#small-img:hover{
-  border: 3px solid rgb(20, 180, 164);
+#small-img:hover {
+  border: 1px solid rgb(10, 97, 88);
   }
 
+.navbar div {
+    margin: inherit; 
+    background-color:rgb(10, 97, 88);  
+  }
+
+.div-row {
+  background-color: grey;
+ }
+
+#main_image {
+  width:75%;
+  height:75%;
+  }
 }
